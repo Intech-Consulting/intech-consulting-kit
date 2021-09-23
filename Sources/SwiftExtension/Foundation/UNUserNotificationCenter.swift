@@ -223,7 +223,7 @@ public extension UNUserNotificationCenter {
         attachments: [UNNotificationAttachment]? = nil,
         repeats: Bool = false,
         identifier: String = UUID().uuidString,
-        category: String = ZamzamConstants.Notification.MAIN_CATEGORY,
+        category: String = IntechConsultingConstants.Notification.MAIN_CATEGORY,
         userInfo: [String: Any]? = nil,
         completion: ((Error?) -> Void)? = nil) {
             // Constuct content
