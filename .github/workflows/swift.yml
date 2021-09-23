@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         xcode: ["12.4"]
-        package: ["Cachable", "CombineExtension", "CombineUIKit", "Coordinator"," Core", "DependencyInjection", "Identifier", "LinkedListDataStructure", "PropertyWrapper", "SwiftExtension", "UIKitExtension"]
+        package: ["Cachable", "CombineExtension", "CombineUIKit", "Coordinator"," Core", "DependencyInjection", "Identifier", "LinkedListDataStructure", "PropertyWrapper", "SwiftExtension", "UIExtension"]
     steps:
     - uses: actions/checkout@v2
     - name: Set Xcode
