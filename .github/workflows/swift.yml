@@ -11,7 +11,7 @@ jobs:
     name: Unit-Tests Package ${{ matrix.package }} on Xcode ${{ matrix.xcode }}
     strategy:
       matrix:
-        xcode: ["13.0"]
+        xcode: ["12.4"]
         package: ["Cachable", "CombineExtension", "CombineUIKit", "Coordinator"," Core", "DependencyInjection", "Identifier", "LinkedListDataStructure", "PropertyWrapper", "SwiftExtension", "UIKitExtension"]
     steps:
     - uses: actions/checkout@v2
