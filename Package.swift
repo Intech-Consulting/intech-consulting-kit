@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "intech-consulting-kit",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v14), .macOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -39,8 +39,8 @@ let package = Package(
             name: "SwiftExtension",
             targets: ["SwiftExtension"]),
         .library(
-            name: "UIKitExtension",
-            targets: ["UIKitExtension"]),
+            name: "UIExtension",
+            targets: ["UIExtension"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -79,7 +79,7 @@ let package = Package(
         .target(
             name: "SwiftExtension",
             dependencies: []),
-        .target(name: "UIKitExtension",
+        .target(name: "UIExtension",
                 dependencies: ["SwiftExtension"]),
         .testTarget(
             name: "CachableTests",
@@ -112,7 +112,7 @@ let package = Package(
             name: "SwiftExtensionTests",
             dependencies: ["SwiftExtension"]),
         .testTarget(
-            name: "UIKitExtensionTests",
-            dependencies: ["UIKitExtension"]),
+            name: "UIExtensionTests",
+            dependencies: ["UIExtension"]),
     ]
 )
