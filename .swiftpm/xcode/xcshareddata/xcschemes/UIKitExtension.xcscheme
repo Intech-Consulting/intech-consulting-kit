@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LinkedListDataStructure"
-               BuildableName = "LinkedListDataStructure"
-               BlueprintName = "LinkedListDataStructure"
+               BlueprintIdentifier = "UIKitExtension"
+               BuildableName = "UIKitExtension"
+               BlueprintName = "UIKitExtension"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "LinkedListDataStructureTests"
-               BuildableName = "LinkedListDataStructureTests"
-               BlueprintName = "LinkedListDataStructureTests"
+               BlueprintIdentifier = "UIKitExtensionTests"
+               BuildableName = "UIKitExtensionTests"
+               BlueprintName = "UIKitExtensionTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "LinkedListDataStructure"
-            BuildableName = "LinkedListDataStructure"
-            BlueprintName = "LinkedListDataStructure"
+            BlueprintIdentifier = "UIKitExtension"
+            BuildableName = "UIKitExtension"
+            BlueprintName = "UIKitExtension"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
