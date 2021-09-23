@@ -1,4 +1,7 @@
 @testable import DependencyInjection
 import XCTest
 
-class DependencyInjectionTests: XCTestCase {}
+class DependencyInjectionTests: XCTestCase {
+    func testExample() {
+    }
+}

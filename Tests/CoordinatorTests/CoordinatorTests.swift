@@ -1,4 +1,7 @@
 @testable import Coordinator
 import XCTest
 
-class CoordinatorTests: XCTestCase {}
+class CoordinatorTests: XCTestCase {
+    func testExample() {
+    }
+}
