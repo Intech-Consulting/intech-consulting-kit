@@ -1,11 +1,3 @@
-//
-//  WatchSession.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/13/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 #if canImport(WatchConnectivity)
 import WatchConnectivity
 
@@ -224,7 +216,7 @@ public extension WatchSession {
     /// - Parameters:
     ///   - values: The dictionary of values.
     ///   - completion: The callback of the success of the transmission.
-    func transfer(context values: [String: Any], completion: ((Result<Bool, ZamzamError>) -> Void)? = nil) {
+    func transfer(context values: [String: Any], completion: ((Result<Bool, AppExtensionError>) -> Void)? = nil) {
         guard !values.isEmpty else { completion?(.success(true)); return }
     
         activate {
@@ -246,7 +238,7 @@ public extension WatchSession {
     /// - Parameters:
     ///   - values: The dictionary of values.
     ///   - completion: The callback of the success with the transmission object.
-    func transfer(userInfo values: [String: Any], completion: ((Result<WCSessionUserInfoTransfer?, ZamzamError>) -> Void)? = nil) {
+    func transfer(userInfo values: [String: Any], completion: ((Result<WCSessionUserInfoTransfer?, AppExtensionError>) -> Void)? = nil) {
         guard !values.isEmpty else { completion?(.success(nil)); return }
     
         activate {
@@ -267,7 +259,7 @@ public extension WatchSession {
     ///   - values: A dictionary of property list values that you want to send.
     ///   - completion: A reply handler for receiving a response from the counterpart, or the error.
     ///     The dictionary of property list values contains the response from the counterpart.
-    func transfer(message values: [String: Any], completion: ((Result<[String: Any], ZamzamError>) -> Void)? = nil) {
+    func transfer(message values: [String: Any], completion: ((Result<[String: Any], AppExtensionError>) -> Void)? = nil) {
         guard !values.isEmpty else { completion?(.success([:])); return }
     
         activate {
@@ -313,7 +305,7 @@ public extension WatchSession {
     /// - Parameters:
     ///   - values: The dictionary of values.
     ///   - completion: The callback of the success with the transmission object.
-    func transfer(complication values: [String: Any], completion: ((Result<WCSessionUserInfoTransfer?, ZamzamError>) -> Void)? = nil) {
+    func transfer(complication values: [String: Any], completion: ((Result<WCSessionUserInfoTransfer?, AppExtensionError>) -> Void)? = nil) {
         guard !values.isEmpty else { completion?(.success(nil)); return }
     
         activate {

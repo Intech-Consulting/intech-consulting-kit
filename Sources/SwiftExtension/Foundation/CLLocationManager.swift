@@ -1,11 +1,3 @@
-//
-//  CLLocationManager.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/18/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 import Foundation
 import CoreLocation
 
@@ -21,5 +13,4 @@ public extension CLLocationManager {
             && CLLocationManager.authorizationStatus()
                 .within(authorization)
     }
-
 }

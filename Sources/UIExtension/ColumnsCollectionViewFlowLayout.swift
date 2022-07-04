@@ -1,11 +1,4 @@
-//
-//  CollectionViewColumnFlowLayout.swift
-//  ZamzamKit iOS
-//
-//  Created by Basem Emara on 2018-02-11.
-//  Copyright © 2018 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 open class ColumnsCollectionViewFlowLayout: UICollectionViewFlowLayout {
@@ -59,3 +52,4 @@ open class ColumnsCollectionViewFlowLayout: UICollectionViewFlowLayout {
         return newBounds != collectionView?.bounds
     }
 }
+#endif

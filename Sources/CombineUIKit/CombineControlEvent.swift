@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+#if !os(macOS)
 import UIKit.UIControl
 
 public extension Publishers {
@@ -48,3 +49,4 @@ extension Publishers.ControlEvent {
         }
     }
 }
+#endif

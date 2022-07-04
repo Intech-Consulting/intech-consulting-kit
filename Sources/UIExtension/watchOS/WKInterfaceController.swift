@@ -1,11 +1,3 @@
-//
-//  WKInterfaceController.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/17/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 #if canImport(WatchKit)
 import WatchKit
 

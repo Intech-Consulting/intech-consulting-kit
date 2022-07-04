@@ -1,11 +1,3 @@
-//
-//  Font.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2017-11-20.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 #if canImport(UIKit)
 import UIKit
 

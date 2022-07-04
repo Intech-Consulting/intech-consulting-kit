@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UISlider {
     /// A publisher emitting value changes for this slider.
@@ -18,3 +19,4 @@ public extension CombineExtensions where Base: UISlider {
                   .eraseToAnyPublisher()
     }
 }
+#endif

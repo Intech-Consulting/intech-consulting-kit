@@ -1,11 +1,4 @@
-//
-//  UIRefreshControl.swift
-//  ZamzamKit iOS
-//
-//  Created by Basem Emara on 2018-03-12.
-//  Copyright © 2018 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UIRefreshControl {
@@ -19,3 +12,4 @@ public extension UIRefreshControl {
         beginRefreshing()
     }
 }
+#endif

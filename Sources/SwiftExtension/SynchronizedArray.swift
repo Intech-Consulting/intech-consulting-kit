@@ -1,16 +1,8 @@
-//
-//  SynchronizedArray.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/27/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 /// A thread-safe array.
 public class SynchronizedArray<Element> {
-    private let queue = DispatchQueue(label: "io.zamzam.ZamzamKit.SynchronizedArray", attributes: .concurrent)
+    private let queue = DispatchQueue(label: "com.intech-consulting.SwiftExtension.SynchronizedArray", attributes: .concurrent)
     private var array = [Element]()
     
     public init() { }

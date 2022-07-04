@@ -1,11 +1,4 @@
-//
-//  UITableViewCell.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 4/30/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UITableViewCell {
@@ -21,3 +14,4 @@ public extension UITableViewCell {
         }
     }
 }
+#endif

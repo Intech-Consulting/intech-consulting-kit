@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UISwitch {
     var isOn: AnyPublisher<Bool, Never> {
@@ -17,3 +18,4 @@ public extension CombineExtensions where Base: UISwitch {
             .eraseToAnyPublisher()
     }
 }
+#endif

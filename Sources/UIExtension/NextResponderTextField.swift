@@ -8,6 +8,7 @@
 //  Copyright (c) 2015 Varaw. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
 
 /**
@@ -82,3 +83,4 @@ open class NextResponderTextField: UITextField {
         }
     }
 }
+#endif

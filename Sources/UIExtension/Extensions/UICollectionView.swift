@@ -1,12 +1,5 @@
-//
-//  UICollectionView.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/31/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 import Foundation
+#if !os(macOS)
 import UIKit
 
 public extension UICollectionView {
@@ -69,3 +62,4 @@ public extension UICollectionView {
         return dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
     }
 }
+#endif

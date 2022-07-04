@@ -1,11 +1,3 @@
-//
-//  Dictionary.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/18/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 public extension Dictionary where Value: Any {

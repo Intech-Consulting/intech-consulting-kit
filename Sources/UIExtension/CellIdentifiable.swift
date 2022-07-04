@@ -1,11 +1,4 @@
-//
-//  CellIdentifiable.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 4/28/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public protocol CellIdentifiable {
@@ -33,3 +26,4 @@ public extension RawRepresentable where Self.RawValue == String {
         self.init(rawValue: identifier)
     }
 }
+#endif

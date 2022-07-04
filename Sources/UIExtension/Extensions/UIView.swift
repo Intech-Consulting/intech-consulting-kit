@@ -1,11 +1,4 @@
-//
-//  UIView.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/25/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UIView {
@@ -170,3 +163,4 @@ public extension UIView {
             return activityIndicator
     }
 }
+#endif

@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UITextField {
     var text: AnyPublisher<String?, Never> {
@@ -30,3 +31,4 @@ public extension CombineExtensions where Base: UITextField {
             .eraseToAnyPublisher()
     }
 }
+#endif

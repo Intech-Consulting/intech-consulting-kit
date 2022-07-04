@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 // MARK: - Gesture Publishers
 public extension CombineExtensions where Base: UITapGestureRecognizer {
@@ -73,3 +74,4 @@ private func gesturePublisher<Gesture: UIGestureRecognizer>(for gesture: Gesture
               .map { gesture }
               .eraseToAnyPublisher()
 }
+#endif

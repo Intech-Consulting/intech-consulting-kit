@@ -1,11 +1,4 @@
-//
-//  UINavigationBar.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/21/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UINavigationBar {
@@ -40,3 +33,4 @@ public extension UINavigationBar {
         }
     }
 }
+#endif

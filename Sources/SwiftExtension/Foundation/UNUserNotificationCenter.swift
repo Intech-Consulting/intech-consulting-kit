@@ -1,11 +1,3 @@
-//
-//  UNUserNotificationCenter.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/3/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import UserNotifications
 import CoreLocation
 

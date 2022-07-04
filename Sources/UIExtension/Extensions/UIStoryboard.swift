@@ -1,11 +1,4 @@
-//
-//  UIStoryboard.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/26/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UIStoryboard {
@@ -30,3 +23,4 @@ public extension UIStoryboard {
         return self.instantiateViewController(withIdentifier: String(describing: T.self)) as? T
     }
 }
+#endif

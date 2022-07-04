@@ -1,11 +1,3 @@
-//
-//  Thread.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/5/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 public extension Thread {

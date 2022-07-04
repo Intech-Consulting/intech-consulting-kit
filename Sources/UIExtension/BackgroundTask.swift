@@ -1,12 +1,4 @@
-//
-//  BackgroundTask.swift
-//  https://gist.github.com/phatmann/e96958529cc86ff584a9
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/15/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 /// Encapsulate iOS background tasks
@@ -40,3 +32,4 @@ open class BackgroundTask {
         identifier = UIBackgroundTaskIdentifier.invalid
     }
 }
+#endif

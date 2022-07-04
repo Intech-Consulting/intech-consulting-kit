@@ -1,11 +1,4 @@
-//
-//  UIViewControllerExtension.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/17/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 import SafariServices
 
@@ -171,4 +164,4 @@ public extension UIViewController {
         return view.frame.height * value
     }
 }
-
+#endif

@@ -1,11 +1,3 @@
-//
-//  BinaryFloatingPoint.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/14/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 public extension BinaryFloatingPoint {

@@ -1,11 +1,4 @@
-//
-//  UISwitch.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 1/30/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UISwitch {
@@ -17,3 +10,4 @@ public extension UISwitch {
 		setOn(!isOn, animated: animated)
 	}
 }
+#endif

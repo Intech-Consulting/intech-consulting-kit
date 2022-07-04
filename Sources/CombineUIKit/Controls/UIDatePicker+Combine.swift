@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtension where Base: UIDatePicker {
     /// A publisher emitting date changes from this date picker.
@@ -26,3 +27,4 @@ public extension CombineExtension where Base: UIDatePicker {
                   .eraseToAnyPublisher()
     }
 }
+#endif
