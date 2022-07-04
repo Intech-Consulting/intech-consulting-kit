@@ -1,11 +1,3 @@
-//
-//  Then.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 4/29/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 public protocol With {}

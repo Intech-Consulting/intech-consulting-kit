@@ -1,11 +1,3 @@
-//
-//  Observable.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/12/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 /// Type for creating observable properties

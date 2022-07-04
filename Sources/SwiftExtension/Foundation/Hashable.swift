@@ -1,10 +1,4 @@
-//
-//  Hashable.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/17/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
+import Foundation
 
 public extension Hashable {
 

@@ -1,22 +1,18 @@
-//
-//  ZamzamKitable.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 1/29/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+import Foundation
 #if os(iOS) || os(tvOS)
 import UIKit
 #elseif os(watchOS)
 import WatchKit
 #endif
 
-public protocol ZamzamKitable {
-
+public protocol AppKitable {
+    var appDisplayName: String? { get }
+    var appBundleID: String? { get }
+    var appVersion: String? { get }
+    var appBuild: String? { get }
 }
 
-public extension ZamzamKitable {
+public extension AppKitable {
 
 	/// App's name.
 	var appDisplayName: String? {
@@ -42,7 +38,7 @@ public extension ZamzamKitable {
 }
 
 // MARK: - Environment
-public extension ZamzamKitable {
+public extension AppKitable {
 	
 	/// Check if app is running in TestFlight mode.
 	var isInTestFlight: Bool {

@@ -1,10 +1,3 @@
-//
-//  UIActivity.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/21/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
 #if canImport(UIKit)
 import UIKit
 

@@ -1,11 +1,4 @@
-//
-//  UIScrollView.swift
-//  ZamzamKit iOS
-//
-//  Created by Basem Emara on 2018-02-20.
-//  Copyright © 2018 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 extension UIScrollView: Scrollable { }
@@ -38,3 +31,4 @@ public extension Scrollable where Self: UIScrollView {
         )
     }
 }
+#endif

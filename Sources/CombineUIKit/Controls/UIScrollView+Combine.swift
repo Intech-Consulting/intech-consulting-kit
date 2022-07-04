@@ -5,9 +5,10 @@
 //  Created by Amine Bensalah on 19/04/2020.
 //
 
-import UIKit
 import Combine
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UIScrollView {
     /// A publisher emitting content offset changes from this UIScrollView.
@@ -36,3 +37,4 @@ public extension CombineExtensions where Base: UIScrollView {
             .eraseToAnyPublisher()
     }
 }
+#endif

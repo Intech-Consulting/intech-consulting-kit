@@ -1,9 +1,9 @@
 name: Swift
 on:
   push:
-    branches:
-      - main
-  pull_request: {}
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test:
@@ -11,8 +11,8 @@ jobs:
     name: Unit-Tests Package ${{ matrix.package }} on Xcode ${{ matrix.xcode }}
     strategy:
       matrix:
-        xcode: ["12.4"]
-        package: ["Cachable", "CombineExtension", "CombineUIKit", "Coordinator"," Core", "DependencyInjection", "Identifier", "LinkedListDataStructure", "PropertyWrapper", "SwiftExtension", "UIExtension"]
+        xcode: ["12.4", "13.2.1"]
+        package: ["Cachable", "CombineExtension", "CombineUIKit"," Core", "Identifier", "LinkedListDataStructure", "PropertyWrapper", "SwiftExtension", "UIExtension"]
     steps:
     - uses: actions/checkout@v2
     - name: Set Xcode

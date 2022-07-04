@@ -1,11 +1,4 @@
-//
-//  UIWindow.swift
-//  ZamzamKit iOS
-//
-//  Created by Basem Emara on 2017-11-20.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public extension UIWindow {
@@ -29,3 +22,4 @@ public extension UIWindow {
         return getTopViewController(from: rootViewController)
     }
 }
+#endif

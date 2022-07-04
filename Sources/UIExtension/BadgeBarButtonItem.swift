@@ -1,12 +1,4 @@
-//
-//  BadgeBarButtonItem.swift
-//  ZamzamKit iOS
-//  https://gist.github.com/yonat/75a0f432d791165b1fd6
-//
-//  Created by Basem Emara on 2018-01-30.
-//  Copyright © 2018 Zamzam. All rights reserved.
-//
-
+#if !os(macOS)
 import UIKit
 
 public class BadgeBarButtonItem: UIBarButtonItem {
@@ -133,3 +125,4 @@ public extension BadgeBarButtonItem {
         self.init(image: image, badgeText: badgeText, target: target, action: action)
     }
 }
+#endif

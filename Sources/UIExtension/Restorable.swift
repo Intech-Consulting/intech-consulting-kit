@@ -1,11 +1,3 @@
-//
-//  Restorable.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/27/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 #if canImport(UIKit)
 import UIKit
 

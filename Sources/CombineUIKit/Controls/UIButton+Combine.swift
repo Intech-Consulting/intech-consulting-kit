@@ -1,6 +1,7 @@
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UIButton {
     var tap: AnyPublisher<Void, Never> {
@@ -16,3 +17,4 @@ public extension CombineExtensions where Base: UIButton {
             .eraseToAnyPublisher()
     }
 }
+#endif

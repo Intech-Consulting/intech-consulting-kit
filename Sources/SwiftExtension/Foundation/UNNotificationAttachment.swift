@@ -1,15 +1,7 @@
-//
-//  UNNotificationAttachment.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/7/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import UserNotifications
 import Foundation
 
-public enum ZamzamError: Error {
+public enum AppExtensionError: Error {
     case general
     case invalidData
     case notReachable
@@ -26,7 +18,7 @@ public extension UNNotificationAttachment {
     ///   - link: The remote HTTP path to the resource.
     ///   - identifier: The identitifer of the user notification attachment.
     ///   - complete: The callback with the constucted user notification attachment.
-    static func download(from link: String, identifier: String? = nil, complete: @escaping (Result<UNNotificationAttachment, ZamzamError>) -> Void) {
+    static func download(from link: String, identifier: String? = nil, complete: @escaping (Result<UNNotificationAttachment, AppExtensionError>) -> Void) {
         FileManager.default.download(from: link) {
             guard $2 == nil else { return complete(.failure($2 != nil ? .other($2!) : .general)) }
             

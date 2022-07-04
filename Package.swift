@@ -18,14 +18,8 @@ let package = Package(
             name: "CombineUIKit",
             targets: ["CombineUIKit"]),
         .library(
-            name: "Coordinator",
-            targets: ["Coordinator"]),
-        .library(
             name: "Core",
             targets: ["Core"]),
-        .library(
-            name: "DependencyInjection",
-            targets: ["DependencyInjection"]),
         .library(
             name: "Identifier",
             targets: ["Identifier"]),
@@ -59,13 +53,7 @@ let package = Package(
             name: "CombineUIKit",
             dependencies: ["CombineExtension"]),
         .target(
-            name: "Coordinator",
-            dependencies: []),
-        .target(
             name: "Core",
-            dependencies: []),
-        .target(
-            name: "DependencyInjection",
             dependencies: []),
         .target(
             name: "Identifier",
@@ -91,14 +79,8 @@ let package = Package(
             name: "CombineUIKitTests",
             dependencies: ["CombineUIKit"]),
         .testTarget(
-            name: "CoordinatorTests",
-            dependencies: ["Coordinator"]),
-        .testTarget(
             name: "CoreTests",
             dependencies: ["Core"]),
-        .testTarget(
-            name: "DependencyInjectionTests",
-            dependencies: ["DependencyInjection"]),
         .testTarget(
             name: "IdentifierTests",
             dependencies: ["Identifier"]),

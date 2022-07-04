@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UIPageControl {
     /// A publisher emitting current page changes for this page control.
@@ -18,3 +19,4 @@ public extension CombineExtensions where Base: UIPageControl {
                   .eraseToAnyPublisher()
     }
 }
+#endif

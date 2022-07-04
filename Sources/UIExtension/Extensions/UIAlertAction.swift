@@ -1,11 +1,3 @@
-//
-//  UIAlertAction.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 3/25/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 #if canImport(UIKit)
 import UIKit
 

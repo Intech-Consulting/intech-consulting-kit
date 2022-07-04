@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import UIKit.UIBarButtonItem
 import Combine
 import CombineExtension
+#if !os(macOS)
+import UIKit.UIBarButtonItem
 
 public extension CombineExtensions where Base: UIBarButtonItem {
     var tap: AnyPublisher<Void, Never> {
@@ -24,3 +25,4 @@ public extension CombineExtensions where Base: UIBarButtonItem {
             .eraseToAnyPublisher()
     }
 }
+#endif

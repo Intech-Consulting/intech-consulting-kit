@@ -1,11 +1,3 @@
-//
-//  NSFileManagerExtension.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 2/17/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 public extension FileManager {
@@ -75,7 +67,7 @@ public extension FileManager {
     ///   - url: The HTTP URL to retrieve the file.
     ///   - complete: The completion handler to call when the load request is complete.
     func download(from url: String, complete: @escaping (URL?, URLResponse?, Error?) -> Void) {
-        guard let nsURL = URL(string: url) else { return complete(nil, nil, ZamzamError.invalidData) }
+        guard let nsURL = URL(string: url) else { return complete(nil, nil, AppExtensionError.invalidData) }
         
         URLSession.shared.downloadTask(with: nsURL) {
             let response = $1

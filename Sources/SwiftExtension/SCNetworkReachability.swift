@@ -1,11 +1,3 @@
-//
-//  SCNetworkReachability.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 5/10/16.
-//  Copyright © 2016 Zamzam. All rights reserved.
-//
-
 import SystemConfiguration
 
 public extension SCNetworkReachability {

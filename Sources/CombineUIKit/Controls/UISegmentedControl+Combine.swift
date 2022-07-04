@@ -6,8 +6,10 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UISegmentedControl {
     var selectedSegmentIndex: AnyPublisher<Int, Never> {
@@ -17,3 +19,4 @@ public extension CombineExtensions where Base: UISegmentedControl {
             .eraseToAnyPublisher()
     }
 }
+#endif

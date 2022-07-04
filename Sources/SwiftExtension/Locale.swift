@@ -1,11 +1,3 @@
-//
-//  Locale.swift
-//  ZamzamKit
-//
-//  Created by Basem Emara on 4/10/17.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 import Foundation
 
 public extension Locale {

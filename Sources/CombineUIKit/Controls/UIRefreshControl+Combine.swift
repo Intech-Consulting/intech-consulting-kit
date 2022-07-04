@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UIRefreshControl {
     /// A publisher emitting refresh status changes from this refresh control.
@@ -18,3 +19,4 @@ public extension CombineExtensions where Base: UIRefreshControl {
                   .eraseToAnyPublisher()
     }
 }
+#endif

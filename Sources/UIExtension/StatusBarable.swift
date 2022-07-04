@@ -1,11 +1,3 @@
-//
-//  StatusBarControllerType.swift
-//  ZamzamKit iOS
-//
-//  Created by Basem Emara on 2017-11-06.
-//  Copyright © 2017 Zamzam. All rights reserved.
-//
-
 #if canImport(UIKit)
 import UIKit
 

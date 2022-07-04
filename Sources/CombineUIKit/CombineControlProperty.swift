@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+#if !os(macOS)
 import UIKit.UIControl
 
 public extension Publishers {
@@ -74,3 +75,4 @@ extension UIControl.Event {
         return [.allEditingEvents, .valueChanged]
     }
 }
+#endif

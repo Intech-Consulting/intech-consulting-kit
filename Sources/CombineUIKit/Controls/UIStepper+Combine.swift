@@ -6,8 +6,9 @@
 //
 
 import Combine
-import UIKit
 import CombineExtension
+#if !os(macOS)
+import UIKit
 
 public extension CombineExtensions where Base: UIStepper {
     /// A publisher emitting value changes for this stepper.
@@ -18,3 +19,4 @@ public extension CombineExtensions where Base: UIStepper {
                   .eraseToAnyPublisher()
     }
 }
+#endif
